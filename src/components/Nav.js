@@ -1,23 +1,24 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
     <StyleNav>
       <h1>
-        <a id="logo" href="#">
+        <Link id="logo" to="/">
           Capture
-        </a>
+        </Link>
       </h1>
       <ul>
         <li>
-          <a href="#">1. Chi Siamo</a>
+          <Link to="/">1. Chi Siamo</Link>
         </li>
         <li>
-          <a href="#">2. Servizi</a>
+          <Link to="/work">2. Portfolio</Link>
         </li>
         <li>
-          <a href="#">3. Contatti</a>
+          <Link to="/contact">3. Contatti</Link>
         </li>
       </ul>
     </StyleNav>
