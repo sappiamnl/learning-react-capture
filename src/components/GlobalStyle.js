@@ -9,10 +9,17 @@ const GlobalStyle = createGlobalStyle`
 
 }
 
+html{
+    @media (max-width:1200px){
+        font-size:75%;
+    }
+}
+
 body{
     //background: #1b1b1b;
     background: #111;
     font-family:'Inter', sans-serif;
+    overflow-x:hidden;
     
 }
 

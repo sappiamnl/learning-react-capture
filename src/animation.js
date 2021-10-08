@@ -1,11 +1,10 @@
 export const pageAnimation = {
   hidden: {
     opacity: 0,
-    y: 300,
   },
   show: {
     opacity: 1,
-    y: 0,
+
     transition: {
       duration: 0.8,
       when: "beforeChildren",
@@ -68,4 +67,27 @@ export const slider = {
 export const sliderContainer = {
   hidden: { opacity: 1 },
   show: { opacity: 1, transition: { staggerChildren: 0.15, ease: "easeOut" } },
+};
+
+export const scrollReveal = {
+  hidden: { opacity: 0, scale: 1.2, tramsition: { duration: 1 } },
+  show: {
+    opacity: 1,
+    scale: 1,
+    tramsition: {
+      duration: 1,
+    },
+  },
+};
+
+export const swoop = {
+  hidden: {
+    opacity: 0,
+    width: "0%",
+  },
+  show: {
+    opacity: 1,
+    width: "100%",
+    transition: { ease: "easeOut", duration: 1 },
+  },
 };
